@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calc</title>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<label>Number1</label><input type = "text" id = "number1"> 
+<br>
+<label>Number2</label><input type = "text" id = "number2">
+<br>
+<label>Total</label><input type = "text" id = "Total">
+<br>
+<button onclick = "add()">+</button>
+<button onclick = "sub()">-</button>
+<button onclick = "mul()">x</button>
+<button onclick = "div()">÷</button>
+</body>
+<script>
+function add() {
+var number1 = document.getElementById("number1").value;
+var number2 = document.getElementById("number2").value;
+var total = Number(number1) + Number(number2)
+document.getElementById("Total").value=total;
+         }
+         
+function sub() {
+var number1 = document.getElementById("number1").value;
+var number2 = document.getElementById("number2").value;
+var total = Number(number1) - Number(number2)
+document.getElementById("Total").value=total;
+         }
+         
+function mul() {
+var number1 = document.getElementById("number1").value;
+var number2 = document.getElementById("number2").value;
+var total = Number(number1) * Number(number2)
+document.getElementById("Total").value=total;
+         }
+         
+function div() {
+var number1 = document.getElementById("number1").value;
+var number2 = document.getElementById("number2").value;
+var total = Number(number1) / Number(number2)
+document.getElementById("Total").value=total;
+         }         
+</script>
+</html>
+
+

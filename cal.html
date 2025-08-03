@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>js project1</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+
+    <label>Number1</label><input type="text" id="number1"><br>
+    <label>Number2</label><input type="text" id="number2"><br>
+    <label>Total</label><input type="text" id="total" readonly><br>
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mul()">*</button>
+    <button onclick="div()">/</button>
+</body>
+    <script>
+        function add() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let total = Number(number1) + Number(number2);
+            document.getElementById("total").value = total;
+        }
+        function mul() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let total = Number(number1) * Number(number2);
+            document.getElementById("total").value = total;
+        }
+        function div() {
+            let number1 = document.getElementById("number1").value;
+            let number2 = document.getElementById("number2").value;
+            let total = Number(number1) / Number(number2);
+            document.getElementById("total").value = total;
+        }
+    </script>
+</html>
